@@ -1,0 +1,13 @@
+project_name               = "gigstrak"
+aws_region                 = "us-west-2"
+root_domain_name           = "example.com"
+site_subdomain             = "www"
+github_org                 = "your-github-org"
+github_repo                = "gigstrakweb"
+github_branch              = "main"
+create_github_oidc_provider = false
+
+tags = {
+  Environment = "prod"
+  App         = "gigstrak"
+}

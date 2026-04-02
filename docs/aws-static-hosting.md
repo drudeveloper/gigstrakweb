@@ -2,6 +2,14 @@
 
 This repo is configured to deploy the site to `S3 + CloudFront` from GitHub Actions.
 
+Terraform for the AWS resources is included in:
+
+- `terraform/`
+
+There is a separate Terraform guide at:
+
+- `docs/terraform-aws-setup.md`
+
 ## What the pipeline does
 
 - Builds a static version of the site with `scripts/build-static-site.ps1`
