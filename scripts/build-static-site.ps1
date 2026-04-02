@@ -31,6 +31,7 @@ $linkReplacements = @{
     'th:href="@{/privacy}"' = 'href="/privacy/"'
     'th:href="@{/terms}"' = 'href="/terms/"'
     'th:href="@{/css/site.css}"' = 'href="/css/site.css"'
+    'th:src="@{/js/analytics.js}"' = 'src="/js/analytics.js"'
     'th:href="@{/images/appicon.png}"' = 'href="/images/appicon.png"'
     'th:src="@{/images/appicon.png}"' = 'src="/images/appicon.png"'
     'th:src="@{/images/google-play-badge.svg}"' = 'src="/images/google-play-badge.svg"'

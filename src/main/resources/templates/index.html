@@ -10,6 +10,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" th:href="@{/images/appicon.png}">
     <link rel="stylesheet" th:href="@{/css/site.css}">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9YWFZY5YRL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag("js", new Date());
+        gtag("config", "G-9YWFZY5YRL");
+    </script>
+    <script defer th:src="@{/js/analytics.js}"></script>
 </head>
 <body>
 <div class="site-shell">
@@ -39,8 +47,10 @@
                     and a professional audit trail that stands up at tax time.
                 </p>
                 <div class="hero-actions">
-                    <a class="button button-primary" href="#features">See how it works</a>
-                    <a class="button button-secondary" th:href="@{/contact}">Talk to us</a>
+                    <a class="button button-primary" href="https://forms.gle/8xgizsS3tRy8rVXSA" target="_blank" rel="noopener noreferrer" data-analytics-event="waitlist_click" data-analytics-label="hero_waitlist">
+                        Join the waitlist
+                    </a>
+                    <a class="button button-secondary" href="#features" data-analytics-event="cta_click" data-analytics-label="hero_features">See how it works</a>
                 </div>
                 <ul class="hero-points">
                     <li>Automatic trip capture while you work</li>
@@ -95,12 +105,25 @@
                 <p>Get it on Play Store now. Apple version is on the way.</p>
             </div>
             <div class="store-actions" aria-label="App store availability">
-                <a class="store-badge-image" href="https://play.google.com/store" target="_blank" rel="noopener noreferrer" aria-label="Get it on Play Store">
+                <a class="store-badge-image" href="https://play.google.com/store" target="_blank" rel="noopener noreferrer" aria-label="Get it on Play Store" data-analytics-event="store_click" data-analytics-label="google_play_badge">
                     <img th:src="@{/images/google-play-badge.svg}" alt="Get it on Google Play">
                 </a>
-                <span class="store-badge-image" aria-label="Coming soon to Apple App Store">
+                <a class="store-badge-image" href="https://forms.gle/8xgizsS3tRy8rVXSA" target="_blank" rel="noopener noreferrer" aria-label="Join the waitlist for Apple App Store updates" data-analytics-event="waitlist_click" data-analytics-label="apple_coming_soon_badge">
                     <img th:src="@{/images/apple-store-badge.svg}" alt="Coming soon to Apple App Store">
-                </span>
+                </a>
+            </div>
+        </section>
+
+        <section class="section section-compact">
+            <div class="waitlist-panel">
+                <div>
+                    <p class="eyebrow">Early access</p>
+                    <h2>Tell us what device you use and get notified when Gigstrak is ready.</h2>
+                    <p>We are using early signups to prioritize Android rollout, Apple demand, and the workflows gig workers care about most.</p>
+                </div>
+                <a class="button button-primary" href="https://forms.gle/8xgizsS3tRy8rVXSA" target="_blank" rel="noopener noreferrer" data-analytics-event="waitlist_click" data-analytics-label="midpage_waitlist">
+                    Open waitlist form
+                </a>
             </div>
         </section>
 
@@ -165,7 +188,7 @@
                     <p class="eyebrow">Built to earn trust</p>
                     <h2>Give gig workers a mileage product that feels premium and dependable.</h2>
                 </div>
-                <a class="button button-primary" th:href="@{/contact}">Contact Gigstrak</a>
+                <a class="button button-primary" th:href="@{/contact}" data-analytics-event="contact_click" data-analytics-label="footer_cta_contact">Contact Gigstrak</a>
             </div>
         </section>
     </main>

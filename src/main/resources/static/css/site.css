@@ -389,6 +389,11 @@ a.store-badge-image:hover {
     padding: 52px 0;
 }
 
+.section-compact {
+    padding-top: 18px;
+    padding-bottom: 18px;
+}
+
 .section-heading {
     max-width: 760px;
     margin-bottom: 28px;
@@ -451,6 +456,34 @@ a.store-badge-image:hover {
     gap: 24px;
 }
 
+.waitlist-panel {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    padding: 30px 32px;
+    border-radius: var(--radius-xl);
+    background: linear-gradient(135deg, rgba(8, 62, 52, 0.92), rgba(13, 107, 87, 0.84));
+    box-shadow: var(--shadow);
+    color: #fff;
+}
+
+.waitlist-panel h2 {
+    font-family: "Space Grotesk", sans-serif;
+    font-size: clamp(2rem, 3vw, 3.1rem);
+    line-height: 1.05;
+    margin: 0 0 12px;
+}
+
+.waitlist-panel p:last-child {
+    color: rgba(255, 255, 255, 0.78);
+    max-width: 60ch;
+}
+
+.waitlist-panel .eyebrow {
+    color: #9fe3d1;
+}
+
 .footer {
     display: flex;
     align-items: flex-start;
@@ -505,7 +538,8 @@ a.store-badge-image:hover {
 
     .topbar,
     .footer,
-    .cta-card {
+    .cta-card,
+    .waitlist-panel {
         flex-direction: column;
         align-items: flex-start;
         border-radius: 28px;
