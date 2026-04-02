@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Gigstrak</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" th:href="@{/images/appicon.png}">
+    <link rel="stylesheet" th:href="@{/css/site.css}">
+</head>
+<body>
+<div class="site-shell site-shell-inner">
+    <header class="topbar">
+        <a class="brand" th:href="@{/}">
+            <img class="brand-mark" th:src="@{/images/appicon.png}" alt="Gigstrak app icon">
+            <span class="brand-copy">
+                <strong>Gigstrak</strong>
+                <small>Task-time mileage intelligence</small>
+            </span>
+        </a>
+        <nav class="nav">
+            <a th:href="@{/}">Home</a>
+            <a th:href="@{/contact}">Contact</a>
+            <a th:href="@{/privacy}">Privacy</a>
+            <a th:href="@{/terms}">Terms</a>
+        </nav>
+    </header>
+
+    <main class="content-page">
+        <section class="page-hero">
+            <p class="eyebrow">About us</p>
+            <h1>We build tools that respect how gig workers actually operate.</h1>
+            <p>
+                Gigstrak exists to remove guesswork from mileage tracking. Our focus is simple:
+                make it easier for independent workers to protect deductions, understand their day,
+                and maintain records they can trust.
+            </p>
+        </section>
+
+        <section class="content-grid">
+            <article class="content-card">
+                <h2>Our mission</h2>
+                <p>
+                    Too many workers lose money because mileage tracking is inconsistent, distracting,
+                    or impossible to maintain during a real shift. We are building a cleaner standard:
+                    professional tools designed around movement, speed, and accountability.
+                </p>
+            </article>
+            <article class="content-card">
+                <h2>What we value</h2>
+                <p>
+                    Accuracy, clarity, and restraint. We believe productivity software should be calm,
+                    credible, and useful under pressure. Every product decision should support trust
+                    at the moment of work and later during reconciliation.
+                </p>
+            </article>
+            <article class="content-card">
+                <h2>Who it serves</h2>
+                <p>
+                    Delivery drivers, rideshare workers, errand runners, field service teams, and
+                    any independent professional whose vehicle is part of the job.
+                </p>
+            </article>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div>
+            <strong>Gigstrak</strong>
+            <p>Professional mileage records for modern independent work.</p>
+        </div>
+        <div class="footer-links">
+            <a th:href="@{/}">Home</a>
+            <a th:href="@{/privacy}">Privacy Policy</a>
+            <a th:href="@{/terms}">Terms of Service</a>
+        </div>
+    </footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gigstrak Privacy Policy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" th:href="@{/images/appicon.png}">
+    <link rel="stylesheet" th:href="@{/css/site.css}">
+</head>
+<body>
+<div class="site-shell site-shell-inner">
+    <header class="topbar">
+        <a class="brand" th:href="@{/}">
+            <img class="brand-mark" th:src="@{/images/appicon.png}" alt="Gigstrak app icon">
+            <span class="brand-copy">
+                <strong>Gigstrak</strong>
+                <small>Task-time mileage intelligence</small>
+            </span>
+        </a>
+        <nav class="nav">
+            <a th:href="@{/}">Home</a>
+            <a th:href="@{/about}">About</a>
+            <a th:href="@{/contact}">Contact</a>
+            <a th:href="@{/terms}">Terms</a>
+        </nav>
+    </header>
+
+    <main class="content-page legal-page">
+        <section class="page-hero">
+            <p class="eyebrow">Privacy policy</p>
+            <h1>We treat location and work-session data as sensitive.</h1>
+            <p>Effective date: April 1, 2026</p>
+        </section>
+
+        <article class="legal-card">
+            <h2>Information we collect</h2>
+            <p>Gigstrak may collect account details, contact information, device identifiers, mileage events, route history, timestamps, and settings needed to operate the service.</p>
+
+            <h2>How we use information</h2>
+            <p>We use collected information to provide mileage tracking, create summaries and exports, improve product reliability, respond to support requests, and meet legal obligations.</p>
+
+            <h2>Location data</h2>
+            <p>Location data is used to calculate mileage and support task-time trip records. Because this data can be sensitive, we aim to limit collection to what is reasonably required for the service.</p>
+
+            <h2>Sharing</h2>
+            <p>We do not sell personal information. We may share information with service providers acting on our behalf, with professional advisers, or when legally required.</p>
+
+            <h2>Retention</h2>
+            <p>We retain information for as long as needed to provide the service, maintain records, resolve disputes, enforce agreements, and comply with law.</p>
+
+            <h2>Your choices</h2>
+            <p>You may contact us to request updates to account information, ask questions about stored data, or request account deletion where applicable.</p>
+
+            <h2>Contact</h2>
+            <p>Privacy questions can be sent to <a href="mailto:privacy@gigstrak.com">privacy@gigstrak.com</a>.</p>
+        </article>
+    </main>
+
+    <footer class="footer">
+        <div>
+            <strong>Gigstrak</strong>
+            <p>Privacy expectations should be explicit, not implied.</p>
+        </div>
+        <div class="footer-links">
+            <a th:href="@{/}">Home</a>
+            <a th:href="@{/contact}">Contact</a>
+            <a th:href="@{/terms}">Terms of Service</a>
+        </div>
+    </footer>
+</div>
+</body>
+</html>

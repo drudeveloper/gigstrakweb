@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gigstrak Terms of Service</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" th:href="@{/images/appicon.png}">
+    <link rel="stylesheet" th:href="@{/css/site.css}">
+</head>
+<body>
+<div class="site-shell site-shell-inner">
+    <header class="topbar">
+        <a class="brand" th:href="@{/}">
+            <img class="brand-mark" th:src="@{/images/appicon.png}" alt="Gigstrak app icon">
+            <span class="brand-copy">
+                <strong>Gigstrak</strong>
+                <small>Task-time mileage intelligence</small>
+            </span>
+        </a>
+        <nav class="nav">
+            <a th:href="@{/}">Home</a>
+            <a th:href="@{/about}">About</a>
+            <a th:href="@{/contact}">Contact</a>
+            <a th:href="@{/privacy}">Privacy</a>
+        </nav>
+    </header>
+
+    <main class="content-page legal-page">
+        <section class="page-hero">
+            <p class="eyebrow">Terms of service</p>
+            <h1>Use of Gigstrak is subject to clear operating terms.</h1>
+            <p>Effective date: April 1, 2026</p>
+        </section>
+
+        <article class="legal-card">
+            <h2>Use of the service</h2>
+            <p>Gigstrak provides mileage tracking and related reporting tools for informational and recordkeeping purposes. Users are responsible for reviewing their own records and confirming tax treatment with qualified professionals.</p>
+
+            <h2>Accounts</h2>
+            <p>You are responsible for maintaining accurate account information and for activity occurring under your account.</p>
+
+            <h2>Acceptable use</h2>
+            <p>You may not misuse the service, attempt unauthorized access, interfere with platform operations, or use the service in violation of applicable law.</p>
+
+            <h2>No tax or legal advice</h2>
+            <p>Gigstrak is not a law firm, accounting firm, or tax adviser. Product outputs should not be treated as legal, tax, or financial advice.</p>
+
+            <h2>Availability</h2>
+            <p>We may update, suspend, or discontinue features from time to time. We aim for reliability but do not guarantee uninterrupted availability.</p>
+
+            <h2>Limitation of liability</h2>
+            <p>To the fullest extent permitted by law, Gigstrak will not be liable for indirect, incidental, special, consequential, or punitive damages arising from use of the service.</p>
+
+            <h2>Contact</h2>
+            <p>Questions about these terms can be sent to <a href="mailto:legal@gigstrak.com">legal@gigstrak.com</a>.</p>
+        </article>
+    </main>
+
+    <footer class="footer">
+        <div>
+            <strong>Gigstrak</strong>
+            <p>Clear product terms for professional use.</p>
+        </div>
+        <div class="footer-links">
+            <a th:href="@{/}">Home</a>
+            <a th:href="@{/privacy}">Privacy Policy</a>
+            <a th:href="@{/contact}">Contact</a>
+        </div>
+    </footer>
+</div>
+</body>
+</html>

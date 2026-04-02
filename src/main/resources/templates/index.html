@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gigstrak | Mileage Tracking for Gig Workers</title>
+    <meta name="description" content="Gigstrak helps gig workers automatically track miles, protect deductions, and stay focused while on task.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" th:href="@{/images/appicon.png}">
+    <link rel="stylesheet" th:href="@{/css/site.css}">
+</head>
+<body>
+<div class="site-shell">
+    <header class="topbar">
+        <a class="brand" th:href="@{/}">
+            <img class="brand-mark" th:src="@{/images/appicon.png}" alt="Gigstrak app icon">
+            <span class="brand-copy">
+                <strong>Gigstrak</strong>
+                <small>Task-time mileage intelligence</small>
+            </span>
+        </a>
+        <nav class="nav">
+            <a th:href="@{/about}">About</a>
+            <a th:href="@{/contact}">Contact</a>
+            <a th:href="@{/privacy}">Privacy</a>
+            <a th:href="@{/terms}">Terms</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-copy">
+                <p class="eyebrow">Built for drivers, shoppers, couriers, and field pros</p>
+                <h1>Capture every deductible mile without breaking focus.</h1>
+                <p class="hero-text">
+                    Gigstrak gives independent workers a clean mileage record, task-aware trip logging,
+                    and a professional audit trail that stands up at tax time.
+                </p>
+                <div class="hero-actions">
+                    <a class="button button-primary" href="#features">See how it works</a>
+                    <a class="button button-secondary" th:href="@{/contact}">Talk to us</a>
+                </div>
+                <ul class="hero-points">
+                    <li>Automatic trip capture while you work</li>
+                    <li>Daily earning context and route clarity</li>
+                    <li>Export-ready records for deductions and bookkeeping</li>
+                </ul>
+            </div>
+            <div class="hero-panel">
+                <div class="stats-card glass">
+                    <p>Today</p>
+                    <strong>84.6 miles</strong>
+                    <span>12 tasks logged across delivery and rideshare shifts</span>
+                </div>
+                <div class="map-card glass">
+                    <div class="map-grid"></div>
+                    <div class="map-highlight map-highlight-a"></div>
+                    <div class="map-highlight map-highlight-b"></div>
+                    <div class="route-pill">Route protected</div>
+                </div>
+                <div class="metrics-row">
+                    <div class="mini-card glass">
+                        <span>Projected deduction</span>
+                        <strong>$56.26</strong>
+                    </div>
+                    <div class="mini-card glass">
+                        <span>Missed miles recovered</span>
+                        <strong>+18%</strong>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="proof-band">
+            <div>
+                <strong>Precise enough for tax records</strong>
+                <span>Structured logs with timestamps, trip totals, and shift context.</span>
+            </div>
+            <div>
+                <strong>Designed for working conditions</strong>
+                <span>Fast, distraction-light flows for workers moving all day.</span>
+            </div>
+            <div>
+                <strong>Professional presentation</strong>
+                <span>Reports that look credible to accountants and auditors.</span>
+            </div>
+        </section>
+
+        <section class="download-strip">
+            <div class="download-copy">
+                <p class="eyebrow">Get the app</p>
+                <h2>Download Gigstrak for Android today.</h2>
+                <p>Get it on Play Store now. Apple version is on the way.</p>
+            </div>
+            <div class="store-actions" aria-label="App store availability">
+                <a class="store-badge-image" href="https://play.google.com/store" target="_blank" rel="noopener noreferrer" aria-label="Get it on Play Store">
+                    <img th:src="@{/images/google-play-badge.svg}" alt="Get it on Google Play">
+                </a>
+                <span class="store-badge-image" aria-label="Coming soon to Apple App Store">
+                    <img th:src="@{/images/apple-store-badge.svg}" alt="Coming soon to Apple App Store">
+                </span>
+            </div>
+        </section>
+
+        <section class="section" id="features">
+            <div class="section-heading">
+                <p class="eyebrow">What makes it better</p>
+                <h2>A serious operating system for mileage, not a generic counter.</h2>
+            </div>
+            <div class="feature-grid">
+                <article class="feature-card">
+                    <h3>Task-aware tracking</h3>
+                    <p>Separate business trips from personal movement with shift-friendly controls and cleaner categorization.</p>
+                </article>
+                <article class="feature-card">
+                    <h3>Live route confidence</h3>
+                    <p>See mileage stack up throughout the day so you can make smarter decisions about busy periods and zones.</p>
+                </article>
+                <article class="feature-card">
+                    <h3>Audit-ready exports</h3>
+                    <p>Generate organized records with trip dates, distances, and totals ready for bookkeeping workflows.</p>
+                </article>
+                <article class="feature-card">
+                    <h3>Privacy-conscious by default</h3>
+                    <p>Clear controls over what is stored and why, with a product philosophy centered on trust.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="section section-alt">
+            <div class="workflow">
+                <div class="workflow-copy">
+                    <p class="eyebrow">How it works</p>
+                    <h2>Start a shift. Stay focused. Finish with clean records.</h2>
+                    <p>
+                        Gigstrak is built for real task time. Open the app, begin your work session, and let the system
+                        maintain the mileage trail while you handle orders, pickups, visits, and drop-offs.
+                    </p>
+                </div>
+                <div class="workflow-steps">
+                    <div class="workflow-step">
+                        <span>01</span>
+                        <h3>Begin a work session</h3>
+                        <p>Mark when you go on task so tracking aligns with the workday instead of guessing later.</p>
+                    </div>
+                    <div class="workflow-step">
+                        <span>02</span>
+                        <h3>Capture movement automatically</h3>
+                        <p>Record routes and totals in the background while keeping the experience calm and readable.</p>
+                    </div>
+                    <div class="workflow-step">
+                        <span>03</span>
+                        <h3>Export and reconcile</h3>
+                        <p>Review your log, confirm the summary, and move straight into taxes, bookkeeping, or reporting.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="cta-card">
+                <div>
+                    <p class="eyebrow">Built to earn trust</p>
+                    <h2>Give gig workers a mileage product that feels premium and dependable.</h2>
+                </div>
+                <a class="button button-primary" th:href="@{/contact}">Contact Gigstrak</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div>
+            <strong>Gigstrak</strong>
+            <p>Mileage tracking for independent workers who need clean records and less friction.</p>
+        </div>
+        <div class="footer-links">
+            <a th:href="@{/about}">About Us</a>
+            <a th:href="@{/contact}">Contact</a>
+            <a th:href="@{/privacy}">Privacy Policy</a>
+            <a th:href="@{/terms}">Terms of Service</a>
+        </div>
+    </footer>
+</div>
+</body>
+</html>
